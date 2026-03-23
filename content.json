@@ -1,0 +1,115 @@
+{
+  "site": {
+    "lang": "zh-CN",
+    "page_title": "Yonghao He - Homepage"
+  },
+  "nav": [
+    { "label": "About", "href": "#about" },
+    { "label": "Education", "href": "#education" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Publications", "href": "#publications" }
+  ],
+  "hero": {
+    "name": "Yonghao He",
+    "subtitle_prefix": "Director of Embodied AI @ ",
+    "subtitle_link": {
+      "text": "D-Robotics",
+      "url": "https://d-robotics.cc/"
+    },
+    "tagline": "I am currently leading R&D in embodied AI at D-Robotics, covering VLA/VA models, Real2Sim2Real, data collection infrastructure, 3D vision foundation models, and high-precision manipulation solutions for industrial scenarios.",
+    "photo": {
+      "src": "images/photo.jpg",
+      "alt": "Yonghao He"
+    },
+    "about_paragraphs": [
+      "I have long engaged with the frontier of artificial intelligence both as an observer and as a practitioner. Since the onset of the current wave of AI (from around 2012), I have witnessed the evolution of the technology and the industry, through to today’s flourishing entrepreneurial ecosystem driven by AI.",
+      "As a co-founder or core team member, I have helped build multiple AI-related companies across domains including security, industrial vision, autonomous driving, and, most recently, embodied AI. This experience has given me a systematic understanding of how AI advances and how industries evolve; I am adept at connecting cutting-edge research with productization and at quickly grasping the essence of complex problems."
+    ],
+    "core_insights_title": "Core Insights",
+    "core_insights": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "social": [
+      { "icon": "wechat", "title": "微信", "href": "#" },
+      { "icon": "xiaohongshu", "title": "小红书", "href": "#" },
+      { "icon": "x", "title": "X", "href": "https://x.com" }
+    ]
+  },
+  "education": {
+    "section_title": "Education",
+    "items": [
+      {
+        "date": "2011 - 2016",
+        "degree": "Ph.D in Pattern Recognition and Intelligent System",
+        "institution": "Institute of Automation, Chinese Academy of Sciences (CASIA)",
+        "description": "Research Areas: Computer Vision, Visual Perception, Multimodal Learning"
+      },
+      {
+        "date": "2007 - 2011",
+        "degree": "B.S. in Software Engineering",
+        "institution": "Sichuan University (SCU)",
+        "description": "Proficient in multi-language programming, system architecture, and software product design."
+      }
+    ]
+  },
+  "experience": {
+    "section_title": "Experience",
+    "items": [
+      {
+        "date": "20XX - Present",
+        "title": "Job Title",
+        "institution": "Company / Organization",
+        "bullets": [
+          "Key responsibility or achievement 1",
+          "Key responsibility or achievement 2",
+          "Key responsibility or achievement 3"
+        ]
+      },
+      {
+        "date": "20XX - 20XX",
+        "title": "Job Title",
+        "institution": "Company / Organization",
+        "bullets": [
+          "Key responsibility or achievement 1",
+          "Key responsibility or achievement 2"
+        ]
+      }
+    ]
+  },
+  "publications": {
+    "section_title": "Publications",
+    "items": [
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "Paper Title Here",
+        "authors": ["Yonghao He", "Co-author Name", "Co-author Name"],
+        "venue": "Conference / Journal Name, Year",
+        "links": [
+          { "label": "Paper", "href": "#" },
+          { "label": "Project", "href": "#" },
+          { "label": "Code", "href": "#" }
+        ],
+        "tags": ["CV", "EmbodiedAI"]
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "Another Paper Title",
+        "authors": ["Yonghao He", "Co-author Name"],
+        "venue": "Conference / Journal Name, Year",
+        "links": [
+          { "label": "Paper", "href": "#" },
+          { "label": "Code", "href": "#" }
+        ],
+        "tags": ["CV"]
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 Yonghao He. All rights reserved."
+  }
+}

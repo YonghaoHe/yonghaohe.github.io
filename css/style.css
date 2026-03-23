@@ -85,7 +85,10 @@ ul {
 /* ========== Hero ========== */
 .hero {
     padding: 120px 0 48px;
-    background: linear-gradient(135deg, #f8fafc 0%, #e8f0fe 100%);
+    /* 方向3 加强：线性渐变拉开对比 + 右上角淡紫高光，仍保持清淡 */
+    background:
+        radial-gradient(ellipse 75% 55% at 88% 8%, rgba(200, 210, 255, 0.38) 0%, transparent 58%),
+        linear-gradient(135deg, #eef0f9 0%, #e0e4f5 42%, #d2e3f5 100%);
 }
 
 .hero .about-content {
@@ -371,6 +374,36 @@ ul {
     font-size: 0.9rem;
 }
 
+/* Education: use two horizontal cards instead of timeline */
+.education-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0;
+    scroll-snap-type: none;
+}
+
+.education-cards::before {
+    content: none;
+}
+
+.education-cards .timeline-item {
+    flex: initial;
+    scroll-snap-align: none;
+}
+
+.education-cards .timeline-item::before,
+.education-cards .timeline-item::after {
+    content: none;
+}
+
+.education-cards .institution {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
 /* ========== Publications ========== */
 .publication-item {
     display: flex;
@@ -493,7 +526,7 @@ ul {
     }
 
     .hero-content {
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
         gap: 24px;
     }
@@ -523,6 +556,14 @@ ul {
     .timeline-item {
         flex: 0 0 240px;
         padding: 16px;
+    }
+
+    .education-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .education-cards .timeline-item {
+        flex: initial;
     }
 
     .publication-item {
