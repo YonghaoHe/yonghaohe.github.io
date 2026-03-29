@@ -211,19 +211,23 @@ ul {
 }
 
 .core-insights li {
-    position: relative;
-    padding: 6px 0 6px 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 6px 0;
     color: #374151;
     font-size: 0.95rem;
     line-height: 1.6;
 }
 
 .core-insights li::before {
-    content: '▸';
-    position: absolute;
-    left: 0;
-    color: #2563eb;
-    font-weight: 700;
+    content: '';
+    flex-shrink: 0;
+    width: 6px;
+    height: 6px;
+    margin-top: calc(0.8em - 3px);
+    border-radius: 50%;
+    background: #2563eb;
 }
 
 /* Social Links */
@@ -233,6 +237,44 @@ ul {
     margin-top: 24px;
     padding-top: 20px;
     border-top: 1px solid #e5e7eb;
+}
+
+.social-icon-wrap {
+    position: relative;
+    display: inline-flex;
+}
+
+.social-qr-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    z-index: 50;
+    padding: 10px;
+    padding-bottom: 14px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 10px 40px rgba(15, 23, 42, 0.18);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%) translateY(6px);
+    transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+    pointer-events: none;
+}
+
+.social-qr-tooltip img {
+    display: block;
+    width: 128px;
+    height: 128px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.social-icon-wrap:hover .social-qr-tooltip,
+.social-icon-wrap:focus-within .social-qr-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
 }
 
 .social-icon {

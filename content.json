@@ -25,16 +25,15 @@
       "I have long engaged with the frontier of artificial intelligence both as an observer and as a practitioner. Since the onset of the current wave of AI (from around 2012), I have witnessed the evolution of the technology and the industry, through to today’s flourishing entrepreneurial ecosystem driven by AI.",
       "As a co-founder or core team member, I have helped build multiple AI-related companies across domains including security, industrial vision, autonomous driving, and, most recently, embodied AI. This experience has given me a systematic understanding of how AI advances and how industries evolve; I am adept at connecting cutting-edge research with productization and at quickly grasping the essence of complex problems."
     ],
-    "core_insights_title": "Core Insights",
+    "core_insights_title": "What I Believe in",
     "core_insights": [
-      "",
-      "",
-      "",
-      ""
+      "Embodied AI will connect the physical and digital worlds; AGI will emerge within our generation.",
+      "In any era, representation learning deserves deep study—it is the most foundational problem.",
+      "The world’s demand for AI has only begun to penetrate (~1%); the landscape for AI inference chips is far from its final form."
     ],
     "social": [
-      { "icon": "wechat", "title": "微信", "href": "#" },
-      { "icon": "xiaohongshu", "title": "小红书", "href": "#" },
+      { "icon": "wechat", "title": "微信", "href": "#", "qr_src": "images/wechat-qr.jpg" },
+      { "icon": "xiaohongshu", "title": "小红书", "href": "#", "qr_src": "images/xhs-qr.jpg" },
       { "icon": "x", "title": "X", "href": "https://x.com" }
     ]
   },
