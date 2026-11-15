@@ -28,7 +28,7 @@ GitHub Pages 会按仓库中的 `index.html` 部署，无需在服务器上运�
 | `nav` | 导航链接：`label`、`href` |
 | `hero` | 姓名、副标题（`subtitle_prefix` + 可选 `subtitle_link`）、简介段落、头像路径、Core Insights、社交链接 |
 | `education` / `experience` | `section_title` 与 `items` 列表 |
-| `publications` | 每项可设 `thumbnail_image`（有则显示图，无则显示占位）、`authors` 数组（第一项会加粗）、`links`、`tags` |
+| `publications` | 每项可设 `thumbnail_image`（有则显示图，无则显示占位）、`authors` 数组（Yonghao He 加粗）、`year`、`links`（`href` 为空则不显示）、`tags`。`year` 早于 2025 的条目默认隐藏，由 View more 展开 |
 | `footer` | `copyright` |
 
 社交图标通过 `hero.social[].icon` 指定：`wechat`、`xiaohongshu`、`x`。

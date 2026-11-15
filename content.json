@@ -11,12 +11,8 @@
   ],
   "hero": {
     "name": "Yonghao He",
-    "subtitle_prefix": "Director of Embodied AI @ ",
-    "subtitle_link": {
-      "text": "D-Robotics",
-      "url": "https://d-robotics.cc/"
-    },
-    "tagline": "I am currently leading R&D in embodied AI at D-Robotics, covering VLA/VA models, Real2Sim2Real, data collection infrastructure, 3D vision foundation models, and high-precision manipulation solutions for industrial scenarios.",
+    "subtitle_prefix": "CTO @ Intime AI",
+    "tagline": "I am CTO of Intime AI. We build the stack for embodied intelligence: simulation environments, simulated data collection, on-device model training and deployment, and real-world scenario applications. We believe simulation will be the main way embodied systems get data, and that Real2Sim2Real can take embodied intelligence into concrete scenarios.",
     "photo": {
       "src": "images/photo.jpg",
       "alt": "Yonghao He"
@@ -113,27 +109,450 @@
       {
         "thumbnail_image": "",
         "thumbnail_placeholder": "Paper Image",
-        "title": "Paper Title Here",
-        "authors": ["Yonghao He", "Co-author Name", "Co-author Name"],
-        "venue": "Conference / Journal Name, Year",
-        "links": [
-          { "label": "Paper", "href": "#" },
-          { "label": "Project", "href": "#" },
-          { "label": "Code", "href": "#" }
+        "title": "RTPolicy: Real-Time (32.9 Hz) Multi-View Visuomotor Policy for Robotic Manipulation on Edge Devices",
+        "authors": [
+          "Xianbao Hou",
+          "Zehao Ni",
+          "Yonghao He",
+          "Lingfeng Qian",
+          "Xin Shi",
+          "Hu Su",
+          "Wei Sui",
+          "Cong Yang"
         ],
-        "tags": ["CV", "EmbodiedAI"]
+        "venue": "arXiv, 2026",
+        "year": 2026,
+        "links": [
+          {
+            "label": "Paper",
+            "href": "https://arxiv.org/abs/2610.41625"
+          },
+          {
+            "label": "Project",
+            "href": "https://d-robotics-ai-lab.github.io/RTPolicy.project"
+          },
+          {
+            "label": "Code",
+            "href": "https://github.com/D-Robotics-AI-Lab/RTPolicy"
+          }
+        ],
+        "tags": []
       },
       {
         "thumbnail_image": "",
         "thumbnail_placeholder": "Paper Image",
-        "title": "Another Paper Title",
-        "authors": ["Yonghao He", "Co-author Name"],
-        "venue": "Conference / Journal Name, Year",
-        "links": [
-          { "label": "Paper", "href": "#" },
-          { "label": "Code", "href": "#" }
+        "title": "X-Lens: Real-Time Metric Depth Estimation with Heterogeneous Cameras",
+        "authors": [
+          "Heng Zhou",
+          "Shuhong Liu",
+          "Yonghao He",
+          "Bohao Zhang",
+          "Fa Fu",
+          "Chenhui Hou",
+          "Xianbao Hou",
+          "Lijun Han",
+          "Wei Sui"
         ],
-        "tags": ["CV"]
+        "venue": "arXiv, 2026",
+        "year": 2026,
+        "links": [
+          {
+            "label": "Paper",
+            "href": "https://arxiv.org/abs/2607.12993"
+          },
+          {
+            "label": "Project",
+            "href": "https://drobotics-xlens.github.io/"
+          },
+          {
+            "label": "Code",
+            "href": "https://github.com/zhouhengamerica/XLens"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "Improving Robotic Imitation Learning via Trajectory Standardization",
+        "authors": [
+          "Licheng Yang",
+          "Lingfeng Qian",
+          "Fei Zheng",
+          "Yonghao He",
+          "Wei Sui",
+          "Shuangshuang Li",
+          "Hu Su"
+        ],
+        "venue": "IROS, 2026",
+        "year": 2026,
+        "links": [
+          {
+            "label": "Paper",
+            "href": "https://arxiv.org/abs/2606.22907"
+          },
+          {
+            "label": "Project",
+            "href": "https://d-robotics-ai-lab.github.io/isr.page/"
+          },
+          {
+            "label": "Code",
+            "href": "https://github.com/D-Robotics-AI-Lab/ISR"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "TabletopGen: Tabletop scene generation and interactive simulation for robotic manipulation",
+        "authors": [
+          "Ziqian Wang",
+          "Yonghao He",
+          "Licheng Yang",
+          "Wei Zou",
+          "Hongxuan Ma",
+          "Liu Liu",
+          "Wei Sui",
+          "Yuxin Guo",
+          "Hu Su"
+        ],
+        "venue": "ECCV, 2026",
+        "year": 2026,
+        "links": [],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "InstaDA: Augmenting Instance Segmentation Data with Dual-Agent System",
+        "authors": [
+          "Xianbao Hou",
+          "Yonghao He",
+          "Zeyd Boukhers",
+          "John See",
+          "Hu Su",
+          "Wei Sui",
+          "Cong Yang"
+        ],
+        "venue": "CVPR Findings, 2026",
+        "year": 2026,
+        "links": [
+          {
+            "label": "Paper",
+            "href": "https://arxiv.org/abs/2509.02973"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "VO-DP: Semantic-geometric adaptive diffusion policy for vision-only robotic manipulation",
+        "authors": [
+          "Zehao Ni",
+          "Yonghao He",
+          "Lingfeng Qian",
+          "Jilei Mao",
+          "Fa Fu",
+          "Wei Sui",
+          "Hu Su",
+          "Junran Peng",
+          "Zhipeng Wang",
+          "Bin He"
+        ],
+        "venue": "ICRA, 2026",
+        "year": 2026,
+        "links": [],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "RSGen: Enhancing Layout-Driven Remote Sensing Image Generation with Diverse Edge Guidance",
+        "authors": [
+          "Xianbao Hou",
+          "Yonghao He",
+          "Zeyd Boukhers",
+          "John See",
+          "Hu Su",
+          "Wei Sui",
+          "Cong Yang"
+        ],
+        "venue": "arXiv, 2026",
+        "year": 2026,
+        "links": [
+          {
+            "label": "Paper",
+            "href": "https://arxiv.org/abs/2603.15484"
+          },
+          {
+            "label": "Code",
+            "href": "https://github.com/D-Robotics-AI-Lab/RSGen"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "Spa3R: Predictive spatial field modeling for 3D visual reasoning",
+        "authors": [
+          "Haoyi Jiang",
+          "Liu Liu",
+          "Xinjie Wang",
+          "Yonghao He",
+          "Wei Sui",
+          "Zhizhong Su",
+          "Wenyu Liu",
+          "Xinggang Wang"
+        ],
+        "venue": "arXiv, 2026",
+        "year": 2026,
+        "links": [
+          {
+            "label": "Paper",
+            "href": "https://arxiv.org/abs/2602.21186"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "A light-weight framework for open-set object detection with decoupled feature alignment in joint space",
+        "authors": [
+          "Yonghao He",
+          "Hu Su",
+          "Haiyong Yu",
+          "Cong Yang",
+          "Wei Sui",
+          "Cong Wang",
+          "Song Liu"
+        ],
+        "venue": "ICRA, 2025",
+        "year": 2025,
+        "links": [],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "BAEFormer: Bi-directional and early interaction transformers for bird's eye view semantic segmentation",
+        "authors": [
+          "Cong Pan",
+          "Yonghao He",
+          "Junran Peng",
+          "Qian Zhang",
+          "Wei Sui",
+          "Zhaoxiang Zhang"
+        ],
+        "venue": "CVPR, 2023",
+        "year": 2023,
+        "links": [],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "Weakly supervised instance segmentation via category-aware centerness learning with localization supervision",
+        "authors": [
+          "Jiabin Zhang",
+          "Hu Su",
+          "Yonghao He",
+          "Wei Zou"
+        ],
+        "venue": "Pattern Recognition, 2023",
+        "year": 2023,
+        "links": [],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "DSLA: Dynamic smooth label assignment for efficient anchor-free object detection",
+        "authors": [
+          "Hu Su",
+          "Yonghao He",
+          "Rui Jiang",
+          "Jiabin Zhang",
+          "Wei Zou",
+          "Bin Fan"
+        ],
+        "venue": "Pattern Recognition, 2022",
+        "year": 2022,
+        "links": [],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "OS-LFFD: a light and fast face detector with Ommateum structure",
+        "authors": [
+          "Dezhong Xu",
+          "Lifang Wu",
+          "Yonghao He",
+          "Qing Zhao",
+          "Meng Jian",
+          "Junchi Yan",
+          "Liang Zhao"
+        ],
+        "venue": "Multimedia Tools and Applications, 2021",
+        "year": 2021,
+        "links": [],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "A novel pixel-wise defect inspection method based on stable background reconstruction",
+        "authors": [
+          "Chengkan Lv",
+          "Fei Shen",
+          "Zhengtao Zhang",
+          "De Xu",
+          "Yonghao He"
+        ],
+        "venue": "IEEE Transactions on Instrumentation and Measurement, 2021",
+        "year": 2021,
+        "links": [],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "LFFD: A light and fast face detector for edge devices",
+        "authors": [
+          "Yonghao He",
+          "Dezhong Xu",
+          "Lifang Wu",
+          "Meng Jian",
+          "Shiming Xiang",
+          "Chunhong Pan"
+        ],
+        "venue": "arXiv, 2019",
+        "year": 2019,
+        "links": [
+          {
+            "label": "Paper",
+            "href": "https://arxiv.org/abs/1904.10633"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "Deep key frame extraction for sport training",
+        "authors": [
+          "Meng Jian",
+          "Shuai Zhang",
+          "Lifang Wu",
+          "Shijie Zhang",
+          "Xiangdong Wang",
+          "Yonghao He"
+        ],
+        "venue": "Neurocomputing, 2019",
+        "year": 2019,
+        "links": [],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "Manifold ranking-based kernel propagation for saliency estimation",
+        "authors": [
+          "Meng Jian",
+          "Lifang Wu",
+          "Xiangyin Zhang",
+          "Yonghao He"
+        ],
+        "venue": "ICCAR, 2018",
+        "year": 2018,
+        "links": [],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "Cross-modal retrieval via deep and bidirectional representation learning",
+        "authors": [
+          "Yonghao He",
+          "Shiming Xiang",
+          "Cuicui Kang",
+          "Jian Wang",
+          "Chunhong Pan"
+        ],
+        "venue": "IEEE Transactions on Multimedia, 2016",
+        "year": 2016,
+        "links": [],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "Image-text cross-modal retrieval via modality-specific feature learning",
+        "authors": [
+          "Jian Wang",
+          "Yonghao He",
+          "Cuicui Kang",
+          "Shiming Xiang",
+          "Chunhong Pan"
+        ],
+        "venue": "ACM ICMR, 2015",
+        "year": 2015,
+        "links": [],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "Cross-modal similarity learning: A low rank bilinear formulation",
+        "authors": [
+          "Cuicui Kang",
+          "Shengcai Liao",
+          "Yonghao He",
+          "Jian Wang",
+          "Wenjia Niu",
+          "Shiming Xiang",
+          "Chunhong Pan"
+        ],
+        "venue": "ACM CIKM, 2015",
+        "year": 2015,
+        "links": [],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "Large scale image annotation via deep representation learning and tag embedding learning",
+        "authors": [
+          "Yonghao He",
+          "Jian Wang",
+          "Cuicui Kang",
+          "Shiming Xiang",
+          "Chunhong Pan"
+        ],
+        "venue": "ACM ICMR, 2015",
+        "year": 2015,
+        "links": [],
+        "tags": []
+      },
+      {
+        "thumbnail_image": "",
+        "thumbnail_placeholder": "Paper Image",
+        "title": "Image tag-ranking via pairwise supervision based semi-supervised model",
+        "authors": [
+          "Yonghao He",
+          "Cuicui Kang",
+          "Jian Wang",
+          "Shiming Xiang",
+          "Chunhong Pan"
+        ],
+        "venue": "Neurocomputing, 2015",
+        "year": 2015,
+        "links": [],
+        "tags": []
       }
     ]
   },

@@ -8,12 +8,18 @@ from __future__ import annotations
 
 import html
 import json
+import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 CONTENT_FILE = ROOT / "content.json"
 OUTPUT_FILE = ROOT / "index.html"
+
+# 首页作者名；作者行里只加粗这一位，而不是列表第一人。
+OWNER_AUTHOR = "Yonghao He"
+# 该年份及之后的论文首次加载即显示，更早的留在页面里，由 View more 展开。
+PUBLICATION_VISIBLE_FROM_YEAR = 2025
 
 # 社交图标 SVG（与原先页面一致）
 SOCIAL_SVGS = {
@@ -113,15 +119,26 @@ def render_timeline_experience(items: list) -> str:
 
 
 def render_authors(authors: list) -> str:
-    if not authors:
-        return ""
-    parts = [f"<strong>{esc(authors[0])}</strong>"]
-    for name in authors[1:]:
-        parts.append(esc(name))
+    parts = []
+    for name in authors:
+        text = esc(name)
+        if (name or "").strip() == OWNER_AUTHOR:
+            text = f"<strong>{text}</strong>"
+        parts.append(text)
     return ", ".join(parts)
 
 
-def render_publication_item(item: dict) -> str:
+def publication_year(item: dict) -> int | None:
+    year = item.get("year")
+    if isinstance(year, int):
+        return year
+    if isinstance(year, str) and year.strip().isdigit():
+        return int(year.strip())
+    match = re.search(r"\b((?:19|20)\d{2})\b", item.get("venue") or "")
+    return int(match.group(1)) if match else None
+
+
+def render_publication_item(item: dict, *, earlier: bool = False) -> str:
     thumb_img = (item.get("thumbnail_image") or "").strip()
     if thumb_img:
         thumb = f"""                    <div class="pub-thumbnail">
@@ -133,35 +150,59 @@ def render_publication_item(item: dict) -> str:
                         <div class="pub-thumbnail-placeholder">{ph}</div>
                     </div>"""
 
-    links_html = []
+    link_lines = []
     for link in item.get("links") or []:
-        links_html.append(
-            f'                            <a href="{attr_esc(link.get("href", "#"))}" class="pub-link">{esc(link.get("label", ""))}</a>'
+        href = (link.get("href") or "").strip()
+        if not href:
+            continue
+        extra = ""
+        if href.startswith(("http://", "https://")):
+            extra = ' target="_blank" rel="noopener"'
+        link_lines.append(
+            f'                            <a href="{attr_esc(href)}" class="pub-link"{extra}>{esc(link.get("label", ""))}</a>'
         )
-    links_block = "\n".join(links_html)
+    links_block = ""
+    if link_lines:
+        links_block = (
+            "                        <div class=\"publication-links\">\n"
+            + "\n".join(link_lines)
+            + "\n                        </div>\n"
+        )
 
-    tags_html = "\n".join(
-        f'                            <span class="pub-tag">{esc(t)}</span>' for t in (item.get("tags") or [])
-    )
+    tag_lines = [
+        f'                            <span class="pub-tag">{esc(tag)}</span>'
+        for tag in (item.get("tags") or [])
+        if str(tag).strip()
+    ]
+    tags_block = ""
+    if tag_lines:
+        tags_block = (
+            "                        <div class=\"pub-tags\">\n"
+            + "\n".join(tag_lines)
+            + "\n                        </div>\n"
+        )
 
-    return f"""                <div class="publication-item">
+    extra_cls = " publication-item--earlier" if earlier else ""
+    aria = ' aria-hidden="true"' if earlier else ""
+    return f"""                <div class="publication-item{extra_cls}"{aria}>
 {thumb}
                     <div class="pub-info">
                         <h3>{esc(item.get("title", ""))}</h3>
                         <p class="authors">{render_authors(item.get("authors") or [])}</p>
                         <p class="venue">{esc(item.get("venue", ""))}</p>
-                        <div class="publication-links">
-{links_block}
-                        </div>
-                        <div class="pub-tags">
-{tags_html}
-                        </div>
-                    </div>
+{links_block}{tags_block}                    </div>
                 </div>"""
 
 
-def render_publications(items: list) -> str:
-    return "\n".join(render_publication_item(it) for it in items)
+def render_publications(items: list) -> tuple[str, bool]:
+    blocks = []
+    has_earlier = False
+    for item in items:
+        year = publication_year(item)
+        earlier = year is not None and year < PUBLICATION_VISIBLE_FROM_YEAR
+        has_earlier = has_earlier or earlier
+        blocks.append(render_publication_item(item, earlier=earlier))
+    return "\n".join(blocks), has_earlier
 
 
 def build_html(data: dict) -> str:
@@ -182,6 +223,13 @@ def build_html(data: dict) -> str:
     li_insights = "\n".join(f"                        <li>{esc(x)}</li>" for x in insights)
 
     copyright_text = esc(footer.get("copyright", ""))
+    publications_html, has_earlier_publications = render_publications(pubs.get("items") or [])
+    publications_more = ""
+    if has_earlier_publications:
+        publications_more = """
+            <div class="publications-more-wrap">
+                <button type="button" class="publications-more" id="publications-more" aria-expanded="false" aria-controls="publications-list">View more</button>
+            </div>"""
 
     return f"""<!DOCTYPE html>
 <html lang="{attr_esc(site.get("lang", "zh-CN"))}">
@@ -254,9 +302,9 @@ def build_html(data: dict) -> str:
     <section class="section" id="publications">
         <div class="container">
             <h2 class="section-title">{esc(pubs.get("section_title", "Publications"))}</h2>
-            <div class="publications-list">
-{render_publications(pubs.get("items") or [])}
-            </div>
+            <div class="publications-list" id="publications-list">
+{publications_html}
+            </div>{publications_more}
         </div>
     </section>
 
