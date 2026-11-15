@@ -58,22 +58,51 @@
     "section_title": "Experience",
     "items": [
       {
-        "date": "20XX - Present",
-        "title": "Job Title",
-        "institution": "Company / Organization",
+        "date": "Sep 2026 - Present",
+        "title": "CTO",
+        "institution": "Intime AI",
         "bullets": [
-          "Key responsibility or achievement 1",
-          "Key responsibility or achievement 2",
-          "Key responsibility or achievement 3"
+          "Embodied simulation, on-device embodied models, and scenario solutions."
         ]
       },
       {
-        "date": "20XX - 20XX",
-        "title": "Job Title",
-        "institution": "Company / Organization",
+        "date": "Jun 2024 - Sep 2026",
+        "title": "Head of Embodied AI",
+        "institution": "D-Robotics",
         "bullets": [
-          "Key responsibility or achievement 1",
-          "Key responsibility or achievement 2"
+          "Led VLA/VA, embodied data collection, simulation scene generation, 3D vision foundation models, latent world models, and high-precision industrial manipulation."
+        ]
+      },
+      {
+        "date": "Jun 2022 - Jun 2024",
+        "title": "Technical Partner",
+        "institution": "CASIVISION",
+        "bullets": [
+          "Managed a team of about 60 and led delivery of the core AI platform and business lines, supporting Pre-IPO at a valuation near RMB 3 billion."
+        ]
+      },
+      {
+        "date": "Jun 2021 - Jun 2022",
+        "title": "Senior Technical Expert",
+        "institution": "Horizon Robotics",
+        "bullets": [
+          "Owned core autonomous-driving perception, including modular perception and BEV architecture."
+        ]
+      },
+      {
+        "date": "Mar 2019 - Jun 2021",
+        "title": "Chief AI Scientist",
+        "institution": "CASIVISION",
+        "bullets": [
+          "Brought AI into industrial surface-defect inspection and built a vision inspection platform."
+        ]
+      },
+      {
+        "date": "Oct 2015 - Mar 2019",
+        "title": "Technical Co-founder",
+        "institution": "Watrix",
+        "bullets": [
+          "Led algorithms and software for gait and face recognition and industrial vision inspection."
         ]
       }
     ]
