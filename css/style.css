@@ -548,6 +548,48 @@ ul {
     border-radius: 12px;
 }
 
+/* Papers before 2025 stay in the list and expand in place. */
+.publication-item--earlier {
+    display: none;
+}
+
+.publications-list.is-expanded .publication-item--earlier {
+    display: flex;
+}
+
+.publications-more-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.publications-more {
+    appearance: none;
+    -webkit-appearance: none;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #2563eb;
+    background: #fff;
+    border: 1px solid #2563eb;
+    border-radius: 6px;
+    padding: 10px 22px;
+    min-height: 44px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.publications-more:hover {
+    background: #2563eb;
+    color: #fff;
+}
+
+.publications-more:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
 /* ========== Footer ========== */
 .footer {
     padding: 24px 0;
