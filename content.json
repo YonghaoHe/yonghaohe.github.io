@@ -25,6 +25,11 @@
         "qr_src": "images/xhs-qr.jpg"
       },
       {
+        "icon": "x",
+        "title": "X",
+        "href": "https://x.com/yonghaohe"
+      },
+      {
         "icon": "email",
         "title": "Email",
         "href": "mailto:heyonghao@intime3d.com"
