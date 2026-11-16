@@ -8,25 +8,26 @@
     "subtitle_prefix": "CTO @ Intime AI",
     "tagline": "I am CTO of Intime AI. We build the stack for embodied intelligence: simulation environments, simulated data collection, on-device model training and deployment, and real-world scenario applications. We believe simulation will be the main way embodied systems get data, and that Real2Sim2Real can take embodied intelligence into concrete scenarios.",
     "photo": {
-      "src": "",
-      "alt": "Yonghao He",
-      "initials": "YH"
+      "src": "images/photo.jpg",
+      "alt": "Yonghao He"
     },
     "social": [
       {
-        "icon": "scholar",
-        "title": "Google Scholar",
-        "href": "#"
+        "icon": "wechat",
+        "title": "WeChat",
+        "href": "#",
+        "qr_src": "images/wechat-qr.jpg"
       },
       {
-        "icon": "github",
-        "title": "GitHub",
-        "href": "#"
+        "icon": "xiaohongshu",
+        "title": "Xiaohongshu",
+        "href": "#",
+        "qr_src": "images/xhs-qr.jpg"
       },
       {
         "icon": "email",
         "title": "Email",
-        "href": "#"
+        "href": "mailto:heyonghao@intime3d.com"
       }
     ]
   },
