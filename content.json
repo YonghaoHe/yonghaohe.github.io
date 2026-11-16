@@ -1,36 +1,33 @@
 {
   "site": {
-    "lang": "zh-CN",
+    "lang": "en",
     "page_title": "Yonghao He - Homepage"
   },
-  "nav": [
-    { "label": "About", "href": "#about" },
-    { "label": "Education", "href": "#education" },
-    { "label": "Experience", "href": "#experience" },
-    { "label": "Publications", "href": "#publications" }
-  ],
   "hero": {
     "name": "Yonghao He",
     "subtitle_prefix": "CTO @ Intime AI",
     "tagline": "I am CTO of Intime AI. We build the stack for embodied intelligence: simulation environments, simulated data collection, on-device model training and deployment, and real-world scenario applications. We believe simulation will be the main way embodied systems get data, and that Real2Sim2Real can take embodied intelligence into concrete scenarios.",
     "photo": {
-      "src": "images/photo.jpg",
-      "alt": "Yonghao He"
+      "src": "",
+      "alt": "Yonghao He",
+      "initials": "YH"
     },
-    "about_paragraphs": [
-      "I have long engaged with the frontier of artificial intelligence both as an observer and as a practitioner. Since the onset of the current wave of AI (from around 2012), I have witnessed the evolution of the technology and the industry, through to today’s flourishing entrepreneurial ecosystem driven by AI.",
-      "As a co-founder or core team member, I have helped build multiple AI-related companies across domains including security, industrial vision, autonomous driving, and, most recently, embodied AI. This experience has given me a systematic understanding of how AI advances and how industries evolve; I am adept at connecting cutting-edge research with productization and at quickly grasping the essence of complex problems."
-    ],
-    "core_insights_title": "What I Believe in",
-    "core_insights": [
-      "Embodied AI will connect the physical and digital worlds; AGI will emerge within our generation.",
-      "Representation learning deserves deep study—it is the most foundational problem; world models exist to serve learning the ultimate representation.",
-      "The world’s demand for AI has only begun to penetrate (~1%); the landscape for AI inference chips is far from its final form."
-    ],
     "social": [
-      { "icon": "wechat", "title": "微信", "href": "#", "qr_src": "images/wechat-qr.jpg" },
-      { "icon": "xiaohongshu", "title": "小红书", "href": "#", "qr_src": "images/xhs-qr.jpg" },
-      { "icon": "x", "title": "X", "href": "https://x.com" }
+      {
+        "icon": "scholar",
+        "title": "Google Scholar",
+        "href": "#"
+      },
+      {
+        "icon": "github",
+        "title": "GitHub",
+        "href": "#"
+      },
+      {
+        "icon": "email",
+        "title": "Email",
+        "href": "#"
+      }
     ]
   },
   "education": {
@@ -51,55 +48,37 @@
     ]
   },
   "experience": {
-    "section_title": "Experience",
+    "section_title": "Experiences",
     "items": [
       {
         "date": "Sep 2026 - Present",
         "title": "CTO",
-        "institution": "Intime AI",
-        "bullets": [
-          "Embodied simulation, on-device embodied models, and scenario solutions."
-        ]
+        "institution": "Intime AI"
       },
       {
         "date": "Jun 2024 - Sep 2026",
         "title": "Head of Embodied AI",
-        "institution": "D-Robotics",
-        "bullets": [
-          "Led VLA/VA, embodied data collection, simulation scene generation, 3D vision foundation models, latent world models, and high-precision industrial manipulation."
-        ]
+        "institution": "D-Robotics"
       },
       {
         "date": "Jun 2022 - Jun 2024",
         "title": "Technical Partner",
-        "institution": "CASIVISION",
-        "bullets": [
-          "Managed a team of about 60 and led delivery of the core AI platform and business lines, supporting Pre-IPO at a valuation near RMB 3 billion."
-        ]
+        "institution": "CASIVISION"
       },
       {
         "date": "Jun 2021 - Jun 2022",
         "title": "Senior Technical Expert",
-        "institution": "Horizon Robotics",
-        "bullets": [
-          "Owned core autonomous-driving perception, including modular perception and BEV architecture."
-        ]
+        "institution": "Horizon Robotics"
       },
       {
         "date": "Mar 2019 - Jun 2021",
         "title": "Chief AI Scientist",
-        "institution": "CASIVISION",
-        "bullets": [
-          "Brought AI into industrial surface-defect inspection and built a vision inspection platform."
-        ]
+        "institution": "CASIVISION"
       },
       {
         "date": "Oct 2015 - Mar 2019",
         "title": "Technical Co-founder",
-        "institution": "Watrix",
-        "bullets": [
-          "Led algorithms and software for gait and face recognition and industrial vision inspection."
-        ]
+        "institution": "Watrix"
       }
     ]
   },
@@ -554,9 +533,66 @@
         "links": [],
         "tags": []
       }
+    ],
+    "legend": [
+      {
+        "mark": "*",
+        "label": "Co-first author"
+      },
+      {
+        "mark": "†",
+        "label": "Project lead"
+      }
     ]
   },
   "footer": {
     "copyright": "© 2026 Yonghao He. All rights reserved."
+  },
+  "news": {
+    "section_title": "Latest News",
+    "items": [
+      {
+        "date": "Nov 12, 2026",
+        "text": "Started as CTO at Intime AI, building simulation-first embodied stack."
+      },
+      {
+        "date": "Oct 28, 2026",
+        "text": "RTPolicy released: 32.9 Hz multi-view policy on edge devices."
+      },
+      {
+        "date": "Sep 15, 2026",
+        "text": "TabletopGen accepted to ECCV 2026."
+      }
+    ]
+  },
+  "work_in_progress": {
+    "section_title": "Work in progress",
+    "items": [
+      {
+        "title": "Real2Sim2Real pipeline",
+        "text": "Closing the sim-to-real gap for tabletop manipulation."
+      },
+      {
+        "title": "On-device embodied models",
+        "text": "Distilling VLA policies for low-power edge chips."
+      },
+      {
+        "title": "Sim data engine",
+        "text": "Scalable simulated data collection and scene generation."
+      }
+    ],
+    "hiring": {
+      "label": "We are hiring",
+      "roles": [
+        {
+          "title": "Embodied AI Researcher",
+          "jd": "Build and evaluate VLA policies on real robots and in simulation."
+        },
+        {
+          "title": "Simulation Engineer",
+          "jd": "Develop scalable simulated scenes and data pipelines for manipulation."
+        }
+      ]
+    }
   }
 }
