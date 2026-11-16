@@ -28,6 +28,11 @@
         "icon": "email",
         "title": "Email",
         "href": "mailto:heyonghao@intime3d.com"
+      },
+      {
+        "icon": "github",
+        "title": "GitHub",
+        "href": "https://github.com/YonghaoHe"
       }
     ]
   },
