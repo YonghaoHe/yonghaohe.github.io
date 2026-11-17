@@ -1,6 +1,9 @@
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/manrope-latin-400.woff2') format('woff2')}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url('../fonts/manrope-latin-600.woff2') format('woff2')}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url('../fonts/manrope-latin-700.woff2') format('woff2')}
 :root{--accent:#2b8cff;--accent-soft:#eaf3ff;--accent-line:#cfe2fb;--bg:#f6f7f9;--card:#fff;--line:#e4e8ee;--text:#1b2027;--muted:#7b8794}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--text);font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+body{background:var(--bg);color:var(--text);font:14px/1.5 'Manrope',sans-serif}
 ul{list-style:none}a{color:inherit;text-decoration:none}
 .page{max-width:1280px;margin:0 auto;padding:32px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
